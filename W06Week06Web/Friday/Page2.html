@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Page 2</title>
+</head>
+
+<style type="text/css">
+	#id1{display:none;}
+
+</style>
+
+<body>
+
+<div id="myDIV">
+Hide this DIV.
+</div>
+
+
+<div hidden>
+Hidden div2.
+</div>
+
+
+<div style="display:none;">
+Hidden div3.
+</div>
+
+<div style="visibility:hidden;">
+Hidden div4.
+</div>
+
+
+
+
+
+
+
+
+
+<button onclick="myFunc(2,'4'); <!-- lalala(); Lalala(); -->">CLick me</button>
+<div id="id1" class="showhide">
+	
+Something
+
+
+
+</div>
+
+
+
+<input type="button" onClick="hiddenDiv2()" value="hiddenDiv2()">
+
+
+<p><a href="file:///C:/V12%20-%20Local%20Drive/5.%20Programs/Eclipse/W06Week06Web/Friday/Page3.html">Go to HTML Page 3</a></p>
+
+
+<script>
+function hiddenDiv2(){
+
+    var x = document.getElementById("myDIV");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+    } else {
+        x.style.visibility = "hidden";
+    }
+
+}
+</script>
+
+<script type="text/javascript">
+	//alert("type");
+	function lalala() {
+		document.getElementById("id1").style.display = "block";
+	}
+		
+	function Lalala() {
+		document.getElementById("id1").style.color = "green";
+	}.
+	
+	var myFunc;
+	myFunc = function(i,j) {
+		console.log(2+"4");
+		k=i+j;
+		k++; 				 /* μετατρεπει το k απο string σε αριθμο, γι'αυτο προσθετει 1 */
+		/* k =+ 1; */
+		alert(k);		
+	}
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
